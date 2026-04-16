@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<input-method
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:settingsActivity="com.study.snapinput.features.settings.SettingsActivity">
+    <subtype
+        android:label="@string/keyboard_name"
+        android:imeSubtypeLocale="zh_CN"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="DefaultLayout=qwerty" />
+    <subtype
+        android:label="@string/keyboard_name_en"
+        android:imeSubtypeLocale="en_US"
+        android:imeSubtypeMode="keyboard"
+        android:imeSubtypeExtraValue="DefaultLayout=qwerty" />
+</input-method>
