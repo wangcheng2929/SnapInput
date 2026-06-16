@@ -28,9 +28,7 @@ rootProject.name = "SnapInput"
 include(":app")
 include(":core")
 include(":data")
-include(":domain")
-include(":presentation")
-include(":features:keyboard")
-include(":features:settings")
-include(":features:prediction")
- 
+include(":ui")
+include(":feature:keyboard")
+include(":feature:prediction")
+include(":feature:settings")

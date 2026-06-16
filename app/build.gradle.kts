@@ -38,24 +38,38 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
-    // AndroidX 核心
+    // 本地模块
+    implementation(project(":core"))
+    implementation(project(":data"))
+    implementation(project(":ui"))
+    implementation(project(":feature:keyboard"))
+    implementation(project(":feature:prediction"))
+    implementation(project(":feature:settings"))
+
+    // AndroidX
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
-    // Compose 全家桶
+
+    // Compose
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
     implementation(libs.androidx.compose.ui.tooling.preview)
     implementation(libs.androidx.compose.material3)
-    // Hilt 依赖注入
-    implementation(libs.timber)
+
+    // Hilt
     implementation(libs.hilt.android)
     ksp(libs.hilt.android.compiler)
+
+    // 工具
+    implementation(libs.timber)
+
     // 测试
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
@@ -64,12 +78,4 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
-    // 本地库依赖
-    implementation(project(":core"))
-    implementation(project(":data"))
-    implementation(project(":domain"))
-    implementation(project(":presentation"))
-    implementation(project(":features:keyboard"))
-    implementation(project(":features:settings"))
-    implementation(project(":features:prediction"))
 }
