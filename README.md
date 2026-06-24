@@ -49,7 +49,7 @@ SnapInput/
 
 设计要点：
 - 依赖统一向下收敛到 `:core`，`:data` 实现 `:core` 定义的接口（依赖倒置）。
-- IME Service 提到 `:app`，可同时拿到���盘 UI 与业务 UseCase，解决了"service 在底层却要用上层 UI"的断裂。
+- IME Service 提到 `:app`，可同时拿到键盘 UI 与业务 UseCase，解决了"service 在底层却要用上层 UI"的断裂。
 - feature 的 Compose 组件**保持无状态**，宿主无关——既可被 IME Service 挂载，也可被 Activity 复用，规避了 `hiltViewModel()` 在非 Activity 宿主中不可用的问题。
 
 ---

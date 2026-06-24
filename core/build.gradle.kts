@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -34,5 +35,11 @@ android {
 dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.hilt.android)
+    // 配置序列化（kotlinx.serialization）
+    implementation(libs.kotlinx.serialization.json)
+    // 协程（资产加载 2 秒总超时）
+    implementation(libs.kotlinx.coroutines.android)
     testImplementation(libs.junit)
+    // 属性测试（kotest-property）
+    testImplementation(libs.kotest.property)
 }

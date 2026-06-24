@@ -1,0 +1,24 @@
+{
+  "id": "light",
+  "keyboardRegionHeightRatio": 0.27,
+  "sideMarginRatio": 0.019444,
+  "horizontalGapRatio": 0.011111,
+  "topMarginRatio": 0.018518,
+  "bottomMarginRatio": 0.018518,
+  "verticalGapRatio": 0.037037,
+  "normalKeyHeightRatio": 0.212963,
+  "cornerRadiusDp": 8.0,
+  "keyDefaults": {
+    "letter": {
+      "widthRatio": 0.086111,
+      "normalBackgroundColor": "#FFFFFFFF",
+      "mainText": { "color": "#FF000000", "sizeRatio": 0.45 },
+      "subLabel": { "color": "#80000000", "sizeRatio": 0.22 }
+    },
+    "special": {
+      "widthRatio": 0.127778,
+      "normalBackgroundColor": "#FFADB3BD",
+      "mainText": { "color": "#FF000000", "sizeRatio": 0.40 }
+    }
+  }
+}

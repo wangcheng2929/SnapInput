@@ -37,6 +37,7 @@ android {
 
 dependencies {
     implementation(project(":ui"))
+    implementation(project(":core"))
 
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
@@ -46,4 +47,6 @@ dependencies {
 
     debugImplementation(libs.androidx.compose.ui.tooling)
     testImplementation(libs.junit)
+    // 属性测试（kotest-property）
+    testImplementation(libs.kotest.property)
 }

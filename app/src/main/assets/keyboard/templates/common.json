@@ -1,0 +1,15 @@
+{
+  "keyTemplates": {
+    "shift": { "keyClass": "special", "action": "Shift", "widthRatio": 0.134722, "mainText": { "content": "⇧" } },
+    "del":   { "keyClass": "special", "action": "Del",   "widthRatio": 0.134722, "mainText": { "content": "⌫" } },
+    "space": { "keyClass": "special", "action": " ",     "width": "fill",        "mainText": { "content": " " } },
+    "enter": { "keyClass": "special", "action": "Enter", "widthRatio": 0.127778, "mainText": { "content": "换行" } },
+    "123":   { "keyClass": "special", "action": "123",   "widthRatio": 0.127778, "mainText": { "content": "123" } },
+    "lang":  { "keyClass": "special", "action": "中/英",  "widthRatio": 0.127778, "mainText": { "content": "中/英" } }
+  },
+  "rowTemplates": {
+    "functionRow": {
+      "keys": [ "$123", { "keyClass": "letter", "action": "，", "mainText": { "content": "，" }, "subLabel": { "content": "。" } }, "$space", "$lang", "$enter" ]
+    }
+  }
+}
